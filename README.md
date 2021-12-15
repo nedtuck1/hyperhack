@@ -1,48 +1,14 @@
-# Welcome to Hyperhack
-This project was created using https://dappstarter.decentology.com for the https://www.decentology.com/hyperhack event. To learn more please check out those links. Happy hacking
 
-# My Dapp
+I am interested in making a decentralized app that allows college athletes to mint NFTs and sell them on a marketplace .  The NFTs could be videos similar to the moments on NBA topshot.  I thought I could use the simple NFT Marketplace module to set up the marketplace and I could use the tribes module to grant them the right to mint their NFTs.  Recently a law was passed that allows college athletes to make money from their likeness, which was illegal before the law was passed.  It seems like it would be a fun way for athletes in any sport to learn about blockchain technology and possibly some could make money.  Recently I learned that a University of North Carolina field hockey player had 50,000 followers on Tik Tok.  This is nearing influencer status and field hockey is not one of the most popular college sports.  This student should have the opportunity to mint NFTs and sell them on a marketplace.  The marketplace could be advertised on the student’s social media pages.   
 
-This project is for the blockchain application My Dapp. It contains code for the Smart Contract, web-based dapp and NodeJS server. 
+I began learning about programming for flow smart contracts using cadence during the fast floward bootcamp.  Here I learned about the tenant setup that the composable smart contracts use.  My plan is to use the multi tenant system to sign up people that want to mint their NFTs.  I want the minter function to be public, and available to people that want to use the dapp.  The hyperverse represents a space where people can use the composable smart contracts written for hyperhack to mint NFTs and join the marketplace for these NFTs.   
 
-# Pre-requisites
+A part of the plan is to use IPFS to give a place for the videos to be stored.  The smart contract needs to be able to point to the media that the NFT represents.  We want to be able to prove ownership, provide data about the NFT, and ensure that we have ownership of the unique data.  The video file that the NFT will be linked to can be stored on IPFS. 
 
-In order to develop and build "My Dapp," the following pre-requisites must be installed:
+A difficult part of this idea is how to create a purchasing mechanism for the tokens we use in the marketplace.  From my limited blockchain experience, USDC is an option, as this is how NBA Topshot pays out people from the United States.  This will be dependent on further legislation in the United States regarding blockchain.   
 
-* [Visual Studio Code](https://code.visualstudio.com/download) (or any IDE for editing Javascript)
-* [NodeJS](https://nodejs.org/en/download/)
-* [Yarn](https://classic.yarnpkg.com/en/docs/install) (DappStarter uses [Yarn Workspaces](https://classic.yarnpkg.com/en/docs/workspaces))
-* [Flow CLI](https://docs.onflow.org/flow-cli/install) (https://docs.onflow.org/flow-cli/install) (after installation run `flow cadence install-vscode-extension` to enable code highlighting for Cadence source files)
-
-### Windows Users
-
-Before you proceed with installation, it's important to note that many blockchain libraries either don't work or generate errors on Windows. If you try installation and can't get the startup scripts to completion, this may be the problem. In that case, it's best to install and run DappStarter using Windows Subsystem for Linux (WSL). Here's a [guide to help you install WSL](https://docs.decentology.com/guides/windows-subsystem-for-linux-wsl).
-
-Blockchains known to require WSL: Solana
-# Installation
-
-Using a terminal (or command prompt), change to the folder containing the project files and type: `yarn` This will fetch all required dependencies. The process will take 1-3 minutes and while it is in progress you can move on to the next step.
-
-# Yarn Errors
-
-You might see failures related to the `node-gyp` package when Yarn installs dependencies.
-These failures occur because the node-gyp package requires certain additional build tools
-to be installed on your computer. Follow the [instructions](https://www.npmjs.com/package/node-gyp) for adding build tools and then try running `yarn` again.
-
-# Build, Deploy and Test
-Using a terminal (or command prompt), change to the folder containing the project files and type: `yarn start` This will run all the dev scripts in each project package.json.
+I am submitting this in the tinker category but I have not been able to start editing the code yet.  I plan to edit the simplenftmarketplace harness file to make the front end look the way I want it to.  When I figure out the tribes module I will edit the app.css file to look the way I want it to as well.  The simplenft.cdc smart contract file will have to be adapted to store the asset on IPFS.  I’m sure other changes will need to be made as I work on the dapp and try to use the hyperverse.   Thank you for considering my idea and for the support and platform to learn about blockchain. 
 
 
 
-## File Locations
-Here are the locations of some important files:
-* Contract Code: [packages/dapplib/contracts](packages/dapplib/contracts)
-* Dapp Library: [packages/dapplib/src/dapp-lib.js](packages/dapplib/src/dapp-lib.js) 
-* Blockchain Interactions: [packages/dapplib/src/blockchain.js](packages/dapplib/src/blockchain.js)
-* Unit Tests: [packages/dapplib/tests](packages/dapplib/tests)
-* UI Test Harnesses: [packages/client/src/dapp/harness](packages/client/src/dapp/harness)
-
-To view your dapp, open your browser to http://localhost:5000 for the DappStarter Workspace.
-
-We ♥️ developers and want you to have an awesome experience. You should be experiencing Dappiness at this point. If not, let us know and we will help. Join our [Discord](https://discord.gg/ZzaaqwMmVG) or hit us up on Twitter [@Decentology](https://twitter.com/decentology).
 
